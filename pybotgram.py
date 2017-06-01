@@ -55,8 +55,8 @@ def hello(bot, update):
 def beer(bot, update):
 	user = update.message.from_user
 	logger.info("Beer %s: %s" % (user.first_name, update.message.text))
-	biere = emojize("Cheers ! :beer: :beers:", use_aliases=True)
-	bot.sendMessage(chat_id=update.message.chat_id, text=biere)
+	beer = emojize("Cheers ! :beer: :beers:", use_aliases=True)
+	bot.sendMessage(chat_id=update.message.chat_id, text=beer)
 
 def star(bot, update):
 
@@ -122,7 +122,7 @@ def main():
 
 	# Send message if ...
 	dp.add_handler(RegexHandler('^.*(?i)(coucou|salut|bonjour|yop|hello).*$', bonjour))
-	dp.add_handler(RegexHandler('^.*(?i)beer.*$', biere))
+	dp.add_handler(RegexHandler('^.*(?i)beer.*$', beer))
 	dp.add_handler(MessageHandler(filter_star, star))
 
 	# on noncommand i.e message - echo the message on Telegram
