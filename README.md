@@ -23,3 +23,9 @@ Add token into config.py
 ## Start
 
 `bash restarter.sh`
+
+## After install
+
+To verify that your bot works well, go to the Telegram bot that you created earlier and type **hello**, the bot must respond. Some other words can be writed as for example **Beer**;)
+
+You can also search for [YunoHost applications](https://github.com/YunoHost-Apps/) that have the most stars by typing `ynh mopidy libreonic`. Of course this bot is stupid, compare what is comparable. We can compare Mastodon and Nextcloud `ynh mastodon nextcloud`, but it does not make much sense because its two applications do not have the same uses.
